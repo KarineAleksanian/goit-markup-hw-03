@@ -83,7 +83,13 @@ body {
 
 .page-navigation {
     display: flex;
+    align-items: center;
 }
+
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
 .page-header-container {
     display: flex;
     align-items: center;
@@ -136,7 +142,7 @@ address {
         letter-spacing: 0.02em;
 }
 
-.address-list {
+.address {
     display: flex;
     gap: 40px;
 }
@@ -159,6 +165,7 @@ address {
 .hero {
     background-color: #2e2f42;
     height: 600px;
+    padding: 188px 0;
     
 }
 .section-hero {
@@ -185,12 +192,16 @@ background: var(--NAVY-BLUE, #2E2F42);
     height: 120px;
     margin-right: auto;
     margin-left: auto;
+    max-width: 496px;
 }
 .hero-button {
-    width: 168px;
-    height: 54px;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
     margin-right: auto;
     margin-left: auto;
+    
 }
 /* =====/Hero styles===== */
  {
@@ -198,6 +209,9 @@ background: var(--NAVY-BLUE, #2E2F42);
 
  }
 /* =====Benefits styles===== */
+.our-benefits {
+    padding: 120px 0;
+}
 .benefits-header {
     color: #2e2f42;
     font-size: 20px;
@@ -205,6 +219,7 @@ background: var(--NAVY-BLUE, #2E2F42);
     line-height: 1.2;
     /* 120% */
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 .benefits-cards {
     display: flex;
@@ -213,6 +228,10 @@ background: var(--NAVY-BLUE, #2E2F42);
     gap: 24px;
     margin-top: 120px;
     margin-bottom: 120px;
+}
+
+.benefits-cards-item {
+    width: calc((100% - 72px) / 4);
 }
 .benefits-text {
 color: var(--SLATE, #434455);
@@ -227,21 +246,27 @@ color: var(--SLATE, #434455);
 /* =====Our team styles===== */
 .our-team {
     background-color: #F4F4FD;
-    
-    padding-top: 118px;
+    padding: 120px 0;
 }
 .section-team {
     height: 732px;
-   
     display: flex;
 }
 
+.team-header {
+    margin-bottom: 72px;
+
+    display: block;
+    width: 167px;
+    height: 40px;
+}
 
 .team-cards {
     display: flex;
+    gap: 24px;
+
     flex-direction: row;
     align-items: center;
-    gap: 24px;
     margin-bottom: 120px;
 }
 .middle-header {
@@ -256,21 +281,21 @@ color: var(--SLATE, #434455);
         text-transform: capitalize;
         
 }
-.team-header {
-    display: block;
-    width: 167px;
-    height: 40px;
-    
-    margin-right: auto;
-    margin-left: auto;
-}
+
 .our-team-card {
     background-color: #FFFFFF;
-    width: 264px;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+
     height: 380px;
     display: block;
     
 }
+
+.container-team-card {
+    padding: 32px 0;
+}
+
 .small-header {
     color: #2e2f42;
     font-size: 20px;
@@ -278,10 +303,10 @@ color: var(--SLATE, #434455);
     line-height: 1.2;
     /* 120% */
     letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 8px;
 }
-.center {
-        text-align: center;
-}
+
 .card-text {
 color: var(--SLATE, #434455);
     font-size: 16px;
@@ -289,6 +314,7 @@ color: var(--SLATE, #434455);
     line-height: 1.5;
     /* 150% */
     letter-spacing: 0.02em;
+    text-align: center;
 }
 /* =====/Our team styles===== */
 
@@ -296,26 +322,49 @@ color: var(--SLATE, #434455);
 
 .section-portfolio {
     padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .portfolio-header {
+    margin-bottom: 72px;
+
     width: 300px;
     height: 40px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 72px;
+    
     display: block;
 
 }
 
 .portfolio-cards {
     display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    
     flex-direction: row;
     align-items: center;
-    gap: 24px;
+    
     margin-bottom: 120px;
-    flex-wrap: wrap;
+    
 }
+
+.portfolio-cards-item {
+    width: calc((100% - 48px) / 3);
+}
+
+.container-portfolio-card {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+
+}
+
+.portfolio-cards-header {
+    margin-bottom: 8px;
+}
+
 .portfolio-cards-text {
     padding-left: 16px;
 
@@ -328,6 +377,7 @@ footer {
 }
 /* footer */
 .footer {
+    padding: 100px 0;
     height: 312px;
 }
 .footer-content {
@@ -338,11 +388,14 @@ footer {
 }
 
 .logo-footer {
+    display: inline-block
+    margin-bottom: 16px;
     width: 117px;
     height: 25px;
-    display: flex;
     flex-direction: row;
     align-items: center;
+
+   
 }
 
 .footer-post {
@@ -352,5 +405,11 @@ footer {
         line-height: 1.5;
         /* 150% */
         letter-spacing: 0.02em;
+        max-width: 264px;
 }
 /* =====Footer styles===== */
+
+/*  =====just inkeys=== */
+
+
+ 
