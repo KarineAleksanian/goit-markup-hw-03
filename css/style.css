@@ -209,10 +209,7 @@ background: var(--NAVY-BLUE, #2E2F42);
     
 }
 /* =====/Hero styles===== */
- {
-    display: flex;
-
- }
+ 
 /* =====Benefits styles===== */
 .our-benefits {
     padding: 120px 0;
@@ -385,21 +382,13 @@ footer {
     padding: 100px 0;
 }
 
-    width: 264px;
-    height: 112px;
-    padding-top: 100px;
-    gap: 16px;
-
-
-.logo-footer {
+.logo-link-footer {
     display: inline-block;
     margin-bottom: 16px;
     width: 117px;
     height: 25px;
     flex-direction: row;
     align-items: center;
-
-   
 }
 
 .footer-post {
