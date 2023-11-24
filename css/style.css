@@ -147,6 +147,11 @@ address {
     gap: 40px;
 }
 
+.address-list {
+    display: flex;
+    gap: 40px;
+}
+
 .contacts-link {
     color: #434455;
     padding-top: 24px;
@@ -376,9 +381,8 @@ footer {
     background: var(--NAVY-BLUE, #2E2F42);
 }
 /* footer */
-.footer {
+.footer-section {
     padding: 100px 0;
-    height: 312px;
 }
 .footer-content {
     width: 264px;
@@ -388,7 +392,7 @@ footer {
 }
 
 .logo-footer {
-    display: inline-block
+    display: inline-block;
     margin-bottom: 16px;
     width: 117px;
     height: 25px;
